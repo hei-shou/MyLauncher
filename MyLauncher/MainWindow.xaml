@@ -1,0 +1,32 @@
+﻿<Window x:Class="MyLauncher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyLauncher"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="q">
+        <TabControl HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Height="110" Width="230">
+            <TabItem Margin="-2,-2,-11,-3">
+                <Grid>
+                    <TextBox Text="https://littleskin.cn/api/yggdrasil" Name="uri" Height="20" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+                    <TextBox Text="Wxysdsb123@163.com" Name="email" Height="20" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,40,0,0"/>
+                    <PasswordBox Name="password" Height="20" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,70,0,0"/>
+                </Grid>
+            </TabItem>
+            <TabItem Margin="13,-2,-26,-3">
+                <Grid>
+                    <TextBox x:Name="zdnc" Height="20" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2,67,0,0"/>
+                    <ComboBox DisplayMemberPath="Version" Name="game" Height="20" VerticalAlignment="Top" Margin="2,10,2,0"/>
+                    <ComboBox DisplayMemberPath="Path" Name="java" Height="20" VerticalAlignment="Top" Margin="2,40,2,0"/>
+                </Grid>
+            </TabItem>
+
+        </TabControl>
+        <Button Content="启动游戏" Height="50" Width="200" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,10,10" Click="Button_Click" />
+        <Button Content="Ygg验证" Height="30" Width="200" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,10,65" Click="Button_Click_1"/>
+        <Button Content="Uuid" Height="30" Width="200" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,10,100" Click="Button_Click_2"/>
+        <ListBox x:Name="ygg" Height="208" Width="200" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0,0,10"/>
+    </Grid>
+</Window>
